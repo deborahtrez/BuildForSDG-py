@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Welcome to the Build for SDGs estimator function page</title>
-		<link rel="stylesheet" href="/index.css">
+		<title>Estimator function main</title>
+		<link rel="stylesheet" href="./index.css">
 	</head>
   
 	<body>
 		<div class="container">
-    		<div class="blurb">
-        	<h1>Hi there, I'm Hank Quinlan!</h1>
-			<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me.</p>
-    		</div>
+            <h1>Please provide the required data</h1>
+			<div>
+                <form>
+                  <label for="population">population</label>
+                  <input type="text" id="data-population" placeholder="population..">
+              
+                  <br><br>
+                  <label for="timeToElapse">timeToElapse</label>
+                  <input type="number" id="data-time-to-elapse" placeholder="Time to elapse..">
+                    
+                  <br><br>
+                  <label for="reportedCases">reportedCases</label>
+                  <input type="number" id="data-reported-cases" placeholder="Reported cases..">
+                  
+                  <br><br>
+                  <label for="totalHospitalBeds">totalHospitalBeds</label>
+                  <input type="number" id="data-total-hospital-beds" placeholder="Total hospital beds..">
+                
+                  <br><br>
+                  <label for="periodType">periodType</label>
+                  <select id="data-period-type">
+                      <option value="days">Days</option>
+                      <option value="weeks">Weeks</option>
+                      <option value="months">Months</option>
+                  </select>
+
+                  <br><br>
+                  <input type="submit" id="data-go-estimate" value="Submit">
+                </form>
+              </div>
+    		
 		</div>
     
 		<footer>
@@ -20,3 +47,4 @@
 	</body>
   
 </html>
+
